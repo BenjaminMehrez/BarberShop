@@ -210,7 +210,7 @@ export function Turnos() {
             <h2 className="text-2xl font-bold mb-2 text-white">Barbero</h2>
             <Select.Root onValueChange={setSelectedItemIdx}>
               <div className="w-72 max-w-full">
-                <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-2 text-sm text-gray-600 bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
+                <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-3 text-md text-gray-600 bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
                   <Select.Value placeholder="Selecciona un Barbero">
                     <div className="flex items-center gap-2">
                       <img
@@ -244,7 +244,7 @@ export function Turnos() {
                   <Select.Content
                     position="popper"
                     avoidCollisions={false}
-                    className="w-[var(--radix-select-trigger-width)] max-h-64 mt-3 overflow-y-auto bg-white border rounded-lg shadow-sm text-sm"
+                    className="w-[var(--radix-select-trigger-width)] max-h-64 mt-3 overflow-y-auto bg-white border rounded-lg shadow-sm text-md"
                   >
                     <Select.Viewport className="">
                       {menuItems.map((item, idx) => (
@@ -268,7 +268,7 @@ export function Turnos() {
             <h2 className="text-2xl font-bold mt-10 mb-2 text-white">Servicio</h2>
             <Select.Root>
               <div className="w-72 max-w-full">
-                <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-2 text-sm text-gray-600 bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
+                <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-3 text-md text-gray-600 bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
                   <Select.Value placeholder="Selecciona un servicio" />
                   <Select.Icon className="text-gray-400">
                     <svg
@@ -291,7 +291,7 @@ export function Turnos() {
                   <Select.Content
                     position="popper"
                     avoidCollisions={false}
-                    className="w-[var(--radix-select-trigger-width)] mt-3 overflow-y-auto bg-white border rounded-lg shadow-sm text-sm"
+                    className="w-[var(--radix-select-trigger-width)] mt-3 overflow-y-auto bg-white border rounded-lg shadow-sm text-md"
                   >
                     <Select.Viewport className="">
                       {menuItems2.map((item, idx) => (
