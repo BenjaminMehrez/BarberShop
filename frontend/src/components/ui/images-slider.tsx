@@ -23,7 +23,6 @@ export const ImagesSlider = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(false);
   const [loadedImages, setLoadedImages] = useState<string[]>([]);
-  console.log(loading);
   
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -57,7 +56,7 @@ export const ImagesSlider = ({
         setLoadedImages(loadedImages as string[]);
         setLoading(false);
       })
-      .catch((error) => console.error("Failed to load images", error));
+      .catch((error) => console.error("Failed to load images", error, loading));
   };
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
