@@ -8,7 +8,7 @@ function Navbar() {
           <img src="/logo.png" alt="logo" className="w-30"/>
         </picture>
         <nav>
-          <ul className="flex gap-5 font-semibold text-xl">
+          <ul className="flex gap-5 font-semibold text-xl text-white">
             <li className="hover:underline">
               <Link to="#turnos">Turnos</Link>
             </li>

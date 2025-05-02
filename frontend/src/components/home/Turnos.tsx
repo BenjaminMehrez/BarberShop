@@ -121,10 +121,10 @@ export function Turnos() {
   );
 
   return (
-    <div className="flex flex-col overflow-hidden" id="turnos">
+    <div className="flex flex-col overflow-hidden bg-zinc-900" id="turnos">
       <ContainerScroll
         titleComponent={
-          <h1 className="text-4xl md:text-[5rem] font-bold leading-none">
+          <h1 className="text-4xl md:text-[5rem] font-bold leading-none text-white">
             Turnos
           </h1>
         }
@@ -207,7 +207,7 @@ export function Turnos() {
           </div>
 
           <div className="mt-20 flex flex-col items-center">
-            <h2 className="text-2xl font-bold mb-2">Barbero</h2>
+            <h2 className="text-2xl font-bold mb-2 text-white">Barbero</h2>
             <Select.Root onValueChange={setSelectedItemIdx}>
               <div className="w-72 max-w-full">
                 <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-2 text-sm text-gray-600 bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
@@ -265,7 +265,7 @@ export function Turnos() {
               </div>
             </Select.Root>
 
-            <h2 className="text-2xl font-bold mt-10 mb-2">Servicio</h2>
+            <h2 className="text-2xl font-bold mt-10 mb-2 text-white">Servicio</h2>
             <Select.Root>
               <div className="w-72 max-w-full">
                 <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-2 text-sm text-gray-600 bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
@@ -304,7 +304,7 @@ export function Turnos() {
                 </Select.Portal>
               </div>
             </Select.Root>
-            <button className="mt-20 btn text-xl p-6 bg-zinc-900 rounded-xl border border-white">Continuar</button>
+            <button className="mt-20 btn text-xl p-6 bg-zinc-900 rounded-xl border border-white text-white">Continuar</button>
           </div>
         </div>
       </ContainerScroll>
