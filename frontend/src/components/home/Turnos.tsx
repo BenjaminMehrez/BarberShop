@@ -4,7 +4,7 @@ import { ContainerScroll } from "../ui/container-scroll-animation";
 
 export function Turnos() {
   // Steps
-  const [steps, setSteps] = useState({
+  const [steps] = useState({
     stepsItems: [
       "Servicio y Barbero",
       "Fecha y Hora",
@@ -15,7 +15,7 @@ export function Turnos() {
   });
 
   // Barbero
-  const [selectedItemIdx, setSelectedItemIdx] = useState(0);
+  const [selectedItemIdx, setSelectedItemIdx] = useState<any>(0);
   const menuItems = [
     {
       name: "Danya",
